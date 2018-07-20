@@ -1,0 +1,37 @@
+{
+  "name": "redux-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TheGrimSilence/redux-testing.git",
+  "author": "Adrian Roach <adrianroach@ebongarde.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "yarn clean && cross-env NODE_ENV=development ts-node fuse",
+    "build:prod": "yarn clean && cross-env NODE_ENV=production ts-node fuse",
+    "clean": "rimraf .fusebox dist"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-redux": "^6.0.4",
+    "@types/redux": "^3.6.0",
+    "@types/redux-logger": "^3.0.6",
+    "@types/redux-thunk": "^2.1.0",
+    "@types/reselect": "^2.2.0",
+    "cross-env": "^5.2.0",
+    "fuse-box": "^3.4.0",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "2.9.1"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^3.0.1"
+  }
+}
