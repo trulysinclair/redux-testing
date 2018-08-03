@@ -15,11 +15,11 @@ function build(): Promise<BundleProducer> {
   fuse = FuseBox.init({
     homeDir: 'src',
     output: 'dist/$name.js',
+    target: 'browser@esnext',
     plugins: [
       EnvPlugin({ NODE_ENV: PROD_ENV ? 'production' : 'development' }),
       WebIndexPlugin({ template: 'resources/index.html', path: '.' }),
     ],
-    target: 'browser@esnext',
   });
 
   if (DEV_ENV) {
